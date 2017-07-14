@@ -8,11 +8,12 @@
   <title>My Portfolio</title>
 
   <!--  Styles  -->
-  <link rel="stylesheet" href="mystyle.css">
+  <link rel="stylesheet" href="css/main.css">
 </head>
 
 <body>
   <header>
+    <div id="logo">Wenxin Wang</div>
     <nav>
       <ul>
         <li><a href="#about">About</a></li>
@@ -21,39 +22,89 @@
       </ul>
     </nav>
   </header>
-
+  <div id="about" class="section">
+	<div class="col-m-7">
+	  <h1>Hi, I'm Wenxin. I work on user experience design and front-end development.</h1>
+	</div>
+	<div class="col-m-5">
+	  <div id="profile">
+		<img src="img/profile.jpg" alt="image of me">
+	  </div>
+	</div>
+  </div>
+  
   <content>
-    <div id="about" class="section">
-      <p>User Experience Designer & Front-End Developer</p>
-      <p>with practical experience in user research, usability test, and project management; devoted to functional programming and information architecture.</p>
-    </div>
     <div id="portfolio" class="section">
       <h1>Portfolio</h1>
-      <div class="showcase col-5">case 1</div>
-      <div class="showcase col-5">case 2</div>
-      <div class="showcase col-5">case 3</div>
-      <div class="showcase col-5">case 4</div>
+      <div class="col-6">
+	    <div class="showcase">
+		  <a href='#'>
+	        <img src="http://lorempixel.com/600/400//technics/4">
+		  </a>
+			<div class="title">Case 1</div>
+			<div class="desc">Skill 1, skill 2</div>
+		</div>
+	  </div>
+      <div class="col-6">
+	    <div class="showcase">
+		  <a href='#'>
+	        <img src="http://lorempixel.com/600/400/technics/1">
+		  </a>
+			<div class="title">Case 2</div>
+			<div class="desc">Skill 2, skill 3</div>
+		</div>
+	  </div>
+      <div class="col-6">
+	    <div class="showcase">
+		  <a href='#'>
+	        <img src="http://lorempixel.com/600/400/technics/2">
+		  </a>
+			<div class="title">Case 3</div>
+			<div class="desc">Skill n, skill m</div>
+		</div>
+	  </div>
+      <div class="col-6">
+	    <div class="showcase">
+		  <a href='#'>
+	        <img src="http://lorempixel.com/600/400/technics/3">
+		  </a>
+			<div class="title">Case 4</div>
+			<div class="desc">Skill x, skill y</div>
+		</div>
+	  </div>
     </div>
     <div id="contact" class="section">
       <h1>Contact Me</h1>
+        <form>
+		  <p>Want to get in touch? Feel free to drop me a line. You should expect to hear from me in a day or so.</p>
+	Your name*<br> <input type="text" name="name" placeholder="e.g. Wenxin Wang" required><br> 
+		  Email address*<br> <input type="email" name="email" placeholder="e.g. wenxin.wang@xxx.com"required><br>
+		  Your website<br> <input type="text" name="website" placeholder="e.g. www.wenxinwang.com"><br>
+		  Message*<br> <textarea name="msg" row="10" required></textarea><br>
+		  <footnote>*Required. Please fill.<br>
+		  <input type="submit" value="SEND">
+		</form>
 
-      <form class="col-6 contact">
-        Name <input type="text" name="name" required><br> Email address <input type="email" name="email" required><br> website <input type="text" name="website"><br> message <textarea name="msg" row="10" col="30"></textarea><br>
-        <input type="submit">
-      </form>
-
-      <div class="col-6 contact">
-        <p>Want to get in touch with me? Be it to request more info about myself or my experience, to ask for my resume, tips on how to solve your sudoku, random questions about the universe and the meaning of life, or even if only for some nice Fika here in stunning Toronto... just feel free to drop me a line anytime.</p>
-
-        <p>I promise to reply A.S.A.P.</p>
-      </div>
     </div>
   </content>
-
   <footer>
     <p>Handmade by me © 2017</p>
-    <a href="https://www.linkedin.com/in/wenxin-wang-delft/"></a>
-    <a href="https://github.com/wenxin-z-wang"></a>
+	<div class="socialcontainer">
+		<div id="linkedin" class="social">
+		  <a href="https://www.linkedin.com/in/wenxin-wang-delft/"><img src="img/LinkedIn.png"></a>
+		  <!--<img id="linkedin" src="img/img_trans.gif"></a>-->
+		</div>
+	</div>
+ 	<div class="socialcontainer">
+		<div id="github" class="social">
+		  <a href="https://github.com/wenxinzwang"><img src="img/GitHub.png"></a>
+		</div>
+	</div>
+   	<div class="socialcontainer">
+		<div id="freecodecamp" class="social" title="freeCodeCamp">
+		  <a href="https://www.freecodecamp.com/wenxin-z-wang"><img src="img/freeCodeCamp.png"></a>
+		</div>
+	</div>
   </footer>
   <!-- Scripts -->
   <script src="scripts/index.js"></script>
