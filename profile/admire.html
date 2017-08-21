@@ -1,0 +1,167 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <!--  Meta  -->
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    
+  <title>ADMIRE | Wenxin Wang Portfolio</title>
+	
+  <!--  Styles  -->
+  <!-- Bootstrap CSS -->
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta/css/bootstrap.min.css" 
+  integrity="sha384-/Y6pD6FV/Vv2HJnA6t+vslU6fwYXjCFtcEpHbNJ0lyAFsXTsjBbfaDjzALeQsN6M" crossorigin="anonymous">
+  <!-- font awesome -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  <link rel="stylesheet" href="../mainStyle.css"
+</head>
+
+<body>
+  <header>
+    <nav class="navbar navbar-expand-lg navbar-dark bg-1">
+	  
+      <a class="navbar-brand" href="..\index.html"><img src="img/logo.png"/></a>
+      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarToggler" aria-controls="navbarToggler" 
+      aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span> Menu
+      </button>
+
+      <div class="collapse navbar-collapse navbar-right" id="navbarToggler">
+        <ul class="navbar-nav ml-auto mt-2 mt-lg-0 justify-content-end">
+          <li class="nav-item">
+            <a class="nav-link" href="..\index.html">About <span class="sr-only">(current)</span></a>
+          </li>
+          <li class="nav-item active">
+            <a class="nav-link" href="..\index.html#portfolio">Portfolio</a>
+          </li>
+		  <li class="nav-item" title="Resume in pdf format">
+            <a class="nav-link" href="..\resume-wwang.pdf">Resume</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#contact">Contact</a>
+          </li>
+        </ul>
+      </div>
+	  </nav>
+  </header>
+  
+  <div class="container-fluid bg-1 text-white text-center">
+	<h1>ADMIRE</h1>
+	<h2 class="subtitle">UX/UI Design, jQuery, HTML5, CSS3, Bootstrap, PHP</h2>	
+  </div>
+  
+  <div class="container-fluid ">
+    <div class="project-intro">
+		<p>ADMIRE (Assessment a of a Disease management system with Medical devices In REnal disease) is a project for kidney transplant patients to monitor
+		their renal functions at home. Patients could use a home-based medical device for measuring, and a website for automatic feedback and advice.</p>
+		<p><a class="btn btn-primary" href="https://wenxinzwang.github.io/admire/" target="_blank">VIEW WEB DEMO</a></p>
+		<figure class="figure">
+			<img src="img/admire.png" class="figure-img img-fluid rounded" alt="admire website image">
+			<figcaption class="figure-caption text-center">The ADMIRE demo screenshot</figcaption>
+		</figure>
+	</div>
+  
+	<div>
+		<h2>The Brief</h2>
+		<p>ADMIRE was a collaborative project among Leiden University Medical Center, TNO, and Delft University of Technology. The aim was to design and evaluate
+	a disease management system for renal tranplant patients. With the system, they could measure their kidney function and monitor it at home, and therefore
+	stimulate early awareness of disease changes, facilitate patients’ autonomy, and reduce demands on health care resources. Part of the project was my PhD 
+	research: my main task was to evalute and improve patients' acceptance of and adherence to it, especially by improving its website.</p>
+	
+		<h2>What I did</h2>
+		<p>I interviewed and discussed with health professionals, patients, and self-management experts, and found the biggest issue was patients' doubts
+	on the automatic advices: they were curious about why and how the website gave certain advices, and wanted the health professionals involved more to be
+	assured.</p>
+	
+		<div class="row">
+			<div class="col-md-6">
+				<figure class="figure">
+					<img src="img/admire-guided.png" class="figure-img img-fluid" alt="guided style image">
+					<figcaption class="figure-caption text-center">Guided style, with kidney function of concern</figcaption>
+				</figure>
+			</div>
+			<div class="col-md-6">
+				<figure class="figure">
+					<img src="img/admire-factual.png" class="figure-img img-fluid" alt="factual style image">
+					<figcaption class="figure-caption text-center">Factual style, with kidney function of concern</figcaption>
+				</figure>
+			</div>
+		</div>	
+		
+		<p>To tackle this problem, we analyzed patient needs, and found that their needs differed in different patient groups and when confronted with different 
+	kidney functions. Therefore, we decided to provide personalized and contextualized information to patients and help them understand their kidney functions
+	better and feel better. It included</p>
+		<ul>
+			<li>a guided style with more emotional support and a factual style with more cognitive information for patients to choose to view</li>
+			<li>a virtual doctor showing empathy in the guided style</li>
+			<li>a graph showing the dynamically changed thresholds of kidney function</li>
+			<li>different information presented for different kidney functions. For example, when the kidney function is alright, the virtual doctor 
+		smiles and the message is less obtrusive.</li>
+		</ul>
+		
+		<div class="row">
+			<div class="col-md-6">
+				<figure class="figure">
+					<img src="img/admire-chart1.png" class="figure-img img-fluid" alt="graph of dynamical thresholds-1">
+				</figure>
+			</div>
+			<div class="col-md-6">
+				<figure class="figure">
+					<img src="img/admire-chart2.png" class="figure-img img-fluid" alt="graph of dynamical thresholds-2">
+				</figure>
+			</div >
+			<div class="col-md-12 text-center">
+				<figure class="figure">
+					<figcaption class="figure-caption">Graphs showing dynamic thresholds</figcaption>
+				</figure>
+			</div>
+		</div>	
+		
+		<h2>The Results</h2>
+		<p>The design and development was in an iterative approach. In each iteration, I figured out issues in the previous design, brainstormed for ideas, 
+		sketch the designs, developed prototypes, tested and analyzed the results. In the last desgin iteration, I tested the working demo with 18 patients. 
+		98% of them understood and 88% would follow the advices they got. Most of them liked and trusted the website; some patients noticed the dynamic
+		thresholds and liked this feature.</p>
+		<p>After the project, there is unfortunately no funding (yet) to continue with it. The website is unavailable now, but you can </p>
+		<p class="text-center"><a class="btn btn-primary" href="https://wenxinzwang.github.io/admire/" target="_blank">VIEW THE WEB DEMO HERE</a></p>
+	  </div>
+  </div>
+  
+    <div id="contact" class="container-fluid bg-dark text-white text-center">
+      <div class="row">
+	    <div class="col-sm-6 text-sm-right">
+          <h1 class="text-sm-right">Want to get in touch?</h1>
+	      <p>Feel free to drop me a line. You should expect to hear from me in a day or so.</p>
+	    </div>
+	    <div class="col-sm-6 text-left">
+	      <ul>
+	        <li><a href="mailto:wangwxzy@gmail.com"><span class="align-text-top"><i class="fa fa-envelope"></i></span></a>Send me an email</li>
+	        <li>
+				<a href="https://www.linkedin.com/in/wenxin-zy-wang/" target="_blank"><span class="align-text-top"><i class="fa fa-linkedin"></i></span></a>
+				View my LinkedIn profile
+			</li>
+	        <li>
+				<a href="https://github.com/wenxinzwang" target="_blank"><span class="align-text-top"><i class="fa fa-github"></i></span></a>
+				View my GitHub projects
+			</li>
+	      </ul>
+        </div>
+	  </div>
+	</div>
+  
+  <footer class="bg-dark text-white text-center">
+    <p>Made by me © 2017</p>
+  </footer>
+  
+  <!-- Scripts 
+  <script src="myScript.js"></script>-->
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" 
+	integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.11.0/umd/popper.min.js" 
+	integrity="sha384-b/U6ypiBEHpOf/4+1nzFpr53nxSS+GLCkfwBdFNTxtclqqenISfwAzpKaMNFNmj4" crossorigin="anonymous"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta/js/bootstrap.min.js" 
+	integrity="sha384-h0AbiXch4ZDo7tp9hKZ4TsHbi047NrKGLO3SEJAg45jXxnGIfYzk4Si90RDIqNm1" crossorigin="anonymous"></script>
+</body>
+
+</html>
