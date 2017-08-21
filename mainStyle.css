@@ -2,12 +2,8 @@
   background-color: #B1CBBB; /*#92B558; #1abc9c;  Green */
 }
 
-.bg-0 {
-	background-color: #ccccc;
-}
-
 .bg-2 {
-	background-color: #82b74b;
+	background-color: #DEEAEE;
 	
 }
 
@@ -66,6 +62,10 @@ h2 {
 	margin-bottom: 0;
 }
 
+.showcase a.btn:not(:only-of-type) {
+	margin-bottom: 0.4rem;
+}
+
 h2.project-title {
 	margin-bottom: 0.5rem;
 	font-weight: 700;
@@ -99,13 +99,26 @@ ul.project-skills {
 	color: #B1CBBB;
 }
 
-li {
+#contact li {
 	list-style-type: none;
 }
 
 footer {
 	padding-bottom: 1rem;
 }
+
+h2.subtitle {
+	font-weight: 700;
+	font-size: 1rem;
+}
+
+.project-intro {
+	font-size: 1.2rem;
+	color: grey;
+	text-align: center;
+}
+
+
 /* Small devices (landscape phones, 576px and up) */
 @media (min-width: 576px) { 
 
@@ -144,6 +157,10 @@ footer {
 	.showcase hr {
 		margin-top: 4rem;
 		margin-bottom: 0;
+	}
+	
+	.project-intro p{
+		padding: 0 8%;
 	}
 }
 
